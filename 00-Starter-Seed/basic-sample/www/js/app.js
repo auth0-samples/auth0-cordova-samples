@@ -38,5 +38,5 @@ document.addEventListener('deviceready',function() {
       $('.login-box').show();
       $('.logged-in-box').hide();
       localStorage.removeItem('userToken');
-    })
+    });
 }, false);
