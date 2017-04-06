@@ -13,4 +13,7 @@
       <param name="ios-package" value="CDVInAppBrowser" />
       <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
+    <!-- Allow links to auth0 -->
+    <allow-navigation href="*.auth0.com" />
+    <access origin="*.auth0.com" />
 </widget>
