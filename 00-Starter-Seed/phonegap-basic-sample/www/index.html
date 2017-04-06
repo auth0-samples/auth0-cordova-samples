@@ -13,9 +13,9 @@
             * Enable inline JS: add 'unsafe-inline' to default-src
             * Enable eval(): add 'unsafe-eval' to default-src
         * Create your own at http://cspisawesome.com
-        * https://YOUR_DOMAIN.auth0.com/ is required to make calls to your Auth0 tenant for user data etc
+        * https://${client.namespace} is required to make calls to your Auth0 tenant for user data etc
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com https://YOUR_DOMAIN.auth0.com; style-src 'self' 'unsafe-inline' https://cdn.auth0.com; media-src *; img-src https:; font-src https://cdn.auth0.com;" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com https://${client.namespace}; style-src 'self' 'unsafe-inline' https://cdn.auth0.com; media-src *; img-src https:; font-src https://cdn.auth0.com;" />
 
 
         <link rel="stylesheet" type="text/css" href="lib/ratchet/ratchet.css">
