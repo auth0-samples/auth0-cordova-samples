@@ -33,4 +33,10 @@ document.addEventListener('deviceready',function() {
       });
     });
 
+    $('.btn-logout').click(function(e) {
+      e.preventDefault();
+      $('.login-box').show();
+      $('.logged-in-box').hide();
+      localStorage.removeItem('userToken');
+    });
 }, false);
