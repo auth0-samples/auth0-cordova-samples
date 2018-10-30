@@ -14,20 +14,20 @@
     "dependencies": {
         "@auth0/cordova": "^0.2.0",
         "auth0-js": "~>9.3.0",
-        "cordova-android": "^6.2.3",
-        "cordova-ios": "~4.4.0",
+        "cordova-android": "^7.1.1",
+        "cordova-ios": "^4.5.5",
         "cordova-plugin-customurlscheme": "~4.2.0",
         "cordova-plugin-inappbrowser": "~1.7.1",
         "cordova-plugin-safariviewcontroller": "~1.4.7",
         "cordova-plugin-whitelist": "~1.3.2"
     },
     "devDependencies": {
-        "cordova": "^6.5.0",
         "babel-cli": "^6.18.0",
         "babel-core": "^6.18.2",
         "babel-loader": "^7.1.1",
         "babel-preset-es2015": "^6.9.0",
         "babel-preset-stage-0": "^6.16.0",
+        "cordova": "^8.1.1",
         "expose-loader": "^0.7.3",
         "webpack": "^3.5.2"
     },
