@@ -119,7 +119,7 @@ Here you can also find the [Issue template](https://github.com/auth0-community/a
 
 ## Repo Community
 
-Feel like PRs and issues are not enough? Want to dive into further discussion about the tool? We created topics for each Auth0 Community repo so that you can join discussion on stack available on our repos. Here it is for this one: [auth0-editprofile-widget](https://community.auth0.com/t/auth0-community-oss-auth0-cordova-samples/15989)
+Feel like PRs and issues are not enough? Want to dive into further discussion about the tool? We created topics for each Auth0 Community repo so that you can join discussion on stack available on our repos. Here it is for this one: [auth0-cordova-samples](https://community.auth0.com/t/auth0-community-oss-auth0-cordova-samples/15989)
 
 <a href="https://community.auth0.com/">
 <img src="/Assets/join_auth0_community_badge.png"/>
