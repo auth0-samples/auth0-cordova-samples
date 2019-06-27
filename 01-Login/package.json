@@ -43,9 +43,9 @@
                 "ANDROID_HOST": "tenant.auth0.com",
                 "ANDROID_PATHPREFIX": "/cordova/com.auth0.cordova.example/callback"
             },
-            "cordova-plugin-inappbrowser": {},
+            "cordova-plugin-whitelist": {},
             "cordova-plugin-safariviewcontroller": {},
-            "cordova-plugin-whitelist": {}
+            "cordova-plugin-inappbrowser": {}
         }
     }
 }

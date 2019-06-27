@@ -7,55 +7,84 @@ This repo is supported and maintained by Community Developers, not Auth0. For mo
 
 ## Getting started
 
-If you haven't already done so, [sign up](https://auth0.com/signup) for your free Auth0 account and create a new client in the [dashboard](https://manage.auth0.com). Find the **domain** and **client ID** from the settings area.
+If you haven't already done so, [sign up](https://auth0.com/signup) for your free Auth0 account.
 
-### Callback URL
+
+## Auth0 API Setup
+
+**1.** Create a **New Application** in the [dashboard](https://manage.auth0.com). 
+
+<img src="../images/Dashboard.png">
+
+<img src="../images/CreateApp.png">
+
+**2.** Find the **Domain** and **client ID** from the settings area.
+
+<img src="../images/AppSettings.png">
+
+**3.** Set the **Application Type** to native.
+
+<img src="../images/AppTypeNative.png">
+
+**4.** Set **Allowed Callback URLs**
+
+## Callback URL
 
 A Callback URL is a location in your app that users will be redirected to once authentication is complete. For Cordova applications, the format of the **Callback URL** is as such:
 
 ```bash
 YOUR_PACKAGE_ID://YOUR_AUTH0_DOMAIN/cordova/YOUR_PACKAGE_ID/callback
 ```
-
-Where:
-
 * `YOUR_PACKAGE_ID` is the app identifier found in `config.xml`. Ex: `com.auth0.cordova.example`.
 * `YOUR_AUTH0_DOMAIN` is your Auth0 tenant domain found in your client settings. Ex: `<tenant>.auth0.com`.
 
+<img src="../images/AllowedCallbackURL.png">
+
 Be sure to add the appropriate **Callback URL** to the **Allowed Callback URLs** box in the client settings for your client in the Auth0 dashboard.
 
-### CORS
+## CORS
 
-Set up CORS (Cross Origin Resource Sharing) in your dashboard so that Auth0 can accept your requests. Add `file://*` to the **Allowed Origins** box in your client settings.
+**5.** Set up **Allowed Origins (CORS)** 
 
-### Set Environment Variables
-
-If you have downloaded this sample from Auth0's Cordova tutorial, a file called `env.js` will come pre-populated with the **Client ID** and **Domain** for your client, as well as a default **Audience**. If you have cloned this sample directly from Github, rename the `env.js.example` file to `env.js` and provide those keys manually.
-
-### Installation
-
-#### Install Cordova Plugins
-
-Several Cordova plugins are required for use with `@auth0/cordova`. Install `safariviewcontroller` and `customurlscheme` with the following commands.
+## Set Environment Variables
 
 ```bash
-cordova plugin add cordova-plugin-safariviewcontroller
+file://*
 ```
 
+
+<img src="../images/AllowedOrigin.png">
+
+## Installation
+
+* **6.Install Cordova Plugins**
+
+## Set Environment Variables
+
+<img src="../images/EnvSettings.png">
+
+Rename the `env.js.example` file to `env.js` and provide the keys from above.
+
+**env.js**
 ```bash
-cordova plugin add cordova-plugin-customurlscheme --variable URL_SCHEME={YOUR_PACKAGE_ID} --variable ANDROID_SCHEME={YOUR_PACKAGE_ID} --variable ANDROID_HOST={YOUR_AUTH0_DOMAIN} --variable ANDROID_PATHPREFIX=/cordova/{YOUR_PACKAGE_ID}/callback
+module.exports = {
+  AUTH0_DOMAIN: '{DOMAIN}',
+  AUTH0_CLIENT_ID: '{CLIENT_ID}',
+  AUTH0_AUDIENCE: 'https://{DOMAIN}/userinfo',
+  PACKAGE_ID: 'com.auth0.cordova.example'
+};
 ```
 
-The variables used when installing `cordova-plugin-customurlscheme` are the same as those used to set up the **Callback URL** in your Auth0 Dashboard.
+> **Note:** If you have downloaded this sample from Auth0's Cordova tutorial, a file called `env.js` will come pre-populated with the **Client ID** and **Domain** for your client, as well as a default **Audience**.
 
-#### Set AndroidLaunchMode 
+## Set AndroidLaunchMode 
 
 In your `config.xml` file, add this preference:
 ```
 <preference name="AndroidLaunchMode" value="singleTask" />
 ```
 
-#### Install the Dependencies and Run the App
+## Install the Dependencies and Run the App
 
 This sample relies on several packages, including **auth0.js** and **auth0-cordova**. Install the dependencies with npm or yarn.
 
