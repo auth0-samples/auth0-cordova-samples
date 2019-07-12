@@ -2,10 +2,6 @@ var env = require('../env');
 var Auth0 = require('auth0-js');
 var Auth0Cordova = require('@auth0/cordova');
 
-function getAllBySelector(arg) {
-  return document.querySelectorAll(arg);
-}
-
 function getBySelector(arg) {
   return document.querySelector(arg);
 }
@@ -14,8 +10,37 @@ function getById(id) {
   return document.getElementById(id);
 }
 
-function getAllByClassName(className) {
-  return document.getElementsByClassName(className);
+function getRedirectUrl() {
+  var domain = env.AUTH0_DOMAIN;
+  var clientId = env.AUTH0_CLIENT_ID;
+  var pakageId = env.PACKAGE_ID;
+  var returnTo = pakageId + '://' + domain + '/cordova/' + pakageId + '/callback';
+  var url = 'https://' + domain + '/v2/logout?client_id=' + clientId + '&returnTo=' + returnTo;
+  return url;
+}
+
+function openUrl(url) {
+  SafariViewController.isAvailable(function (available) {
+    if (available) {
+      SafariViewController.show({
+            url: url
+          },
+          function(result) {
+            if (result.event === 'opened') {
+              console.log('opened');
+            } else if (result.event === 'loaded') {
+              console.log('loaded');
+            } else if (result.event === 'closed') {
+              console.log('closed');
+            }
+          },
+          function(msg) {
+            console.log("KO: " + JSON.stringify(msg));
+          })
+    } else {
+      window.open(url, '_system');
+    }
+  })
 }
 
 function App() {
@@ -108,6 +133,8 @@ App.prototype.login = function(e) {
 
 App.prototype.logout = function(e) {
   localStorage.removeItem('access_token');
+  var url = getRedirectUrl();
+  openUrl(url);
   this.resumeApp();
 };
 
