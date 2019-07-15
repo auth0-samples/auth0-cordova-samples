@@ -50,6 +50,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "lbalmaceda",
+      "name": "Luciano Balmaceda",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3900123?v=4",
+      "profile": "https://github.com/lbalmaceda",
+      "contributions": [
+        "code",
+        "maintenance",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
