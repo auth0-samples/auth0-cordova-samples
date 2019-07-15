@@ -1,6 +1,6 @@
 # Auth0 Cordova Samples
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 <img src="https://img.shields.io/badge/community-driven-brightgreen.svg"/> <br>
 
 ### Contributors 
@@ -16,6 +16,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://qaboy.com"><img src="https://avatars2.githubusercontent.com/u/5594487?v=4" width="100px;" alt="Michael Arias"/><br /><sub><b>Michael Arias</b></sub></a><br /><a href="https://github.com/auth0-community/auth0-cordova-samples/commits?author=mikearias3" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/mehreencs87"><img src="https://avatars0.githubusercontent.com/u/14890513?v=4" width="100px;" alt="Mehreen Khan"/><br /><sub><b>Mehreen Khan</b></sub></a><br /><a href="https://github.com/auth0-community/auth0-cordova-samples/commits?author=mehreencs87" title="Code">💻</a></td>
     <td align="center"><a href="http://www.aresdev.com"><img src="https://avatars0.githubusercontent.com/u/5215594?v=4" width="100px;" alt="Scott Steinbeck"/><br /><sub><b>Scott Steinbeck</b></sub></a><br /><a href="https://github.com/auth0-community/auth0-cordova-samples/commits?author=scottsteinbeck" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/lbalmaceda"><img src="https://avatars3.githubusercontent.com/u/3900123?v=4" width="100px;" alt="Luciano Balmaceda"/><br /><sub><b>Luciano Balmaceda</b></sub></a><br /><a href="https://github.com/auth0-community/auth0-cordova-samples/commits?author=lbalmaceda" title="Code">💻</a> <a href="#maintenance-lbalmaceda" title="Maintenance">🚧</a> <a href="#review-lbalmaceda" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
