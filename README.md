@@ -1,6 +1,6 @@
 # Auth0 Cordova Samples
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 <img src="https://img.shields.io/badge/community-driven-brightgreen.svg"/> <br>
 
 ### Contributors 
@@ -13,6 +13,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://twitter.com/beardaway"><img src="https://avatars3.githubusercontent.com/u/11062800?v=4" width="100px;" alt="Conrad Sopala"/><br /><sub><b>Conrad Sopala</b></sub></a><br /><a href="#maintenance-beardaway" title="Maintenance">🚧</a> <a href="#review-beardaway" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://github.com/alexisluque"><img src="https://avatars2.githubusercontent.com/u/30907012?v=4" width="100px;" alt="Alexis Luque"/><br /><sub><b>Alexis Luque</b></sub></a><br /><a href="https://github.com/auth0-community/auth0-cordova-samples/commits?author=alexisluque" title="Code">💻</a></td>
+    <td align="center"><a href="https://qaboy.com"><img src="https://avatars2.githubusercontent.com/u/5594487?v=4" width="100px;" alt="Michael Arias"/><br /><sub><b>Michael Arias</b></sub></a><br /><a href="https://github.com/auth0-community/auth0-cordova-samples/commits?author=mikearias3" title="Code">💻</a></td>
   </tr>
 </table>
 
