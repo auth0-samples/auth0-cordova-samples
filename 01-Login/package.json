@@ -14,8 +14,8 @@
     "dependencies": {
         "@auth0/cordova": "^0.4.2",
         "auth0-js": "~>9.13.2",
-        "cordova-android": "^8.1.0",
-        "cordova-ios": "^5.1.1",
+        "cordova-android": "^9.0.0",
+        "cordova-ios": "^6.0.0",
         "cordova-plugin-customurlscheme": "~5.0.0",
         "cordova-plugin-inappbrowser": "^3.2.0",
         "cordova-plugin-safariviewcontroller": "~1.6.0",
