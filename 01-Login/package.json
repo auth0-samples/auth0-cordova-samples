@@ -12,7 +12,7 @@
     "author": "Auth0",
     "license": "ISC",
     "dependencies": {
-        "@auth0/cordova": "^0.4.4",
+        "@auth0/cordova": "^0.4.5",
         "auth0-js": "~9.19.0",
         "cordova-android": "^9.1.0",
         "cordova-ios": "^6.2.0",
