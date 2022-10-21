@@ -1,7 +1,8 @@
 # Login
+
 <img src="https://img.shields.io/badge/community-driven-brightgreen.svg"/> <br>
 
-This sample demonstrates how to add authentication to a Cordova application using Auth0's Lock widget from the hosted login page.
+This sample demonstrates how to add authentication to a Cordova application using [Auth0 Universal Login](https://auth0.com/docs/authenticate/login/auth0-universal-login).
 
 This repo is supported and maintained by Community Developers, not Auth0. For more information about different support levels check https://auth0.com/docs/support/matrix .
 
@@ -9,10 +10,9 @@ This repo is supported and maintained by Community Developers, not Auth0. For mo
 
 If you haven't already done so, [sign up](https://auth0.com/signup) for your free Auth0 account.
 
-
 ## Auth0 API Setup
 
-**1.** Create a **New Application** in the [dashboard](https://manage.auth0.com). 
+**1.** Create a **New Application** in the [dashboard](https://manage.auth0.com).
 
 <img src="../images/Dashboard.png">
 
@@ -35,8 +35,9 @@ A Callback URL is a location in your app that users will be redirected to once a
 ```bash
 YOUR_PACKAGE_ID://YOUR_AUTH0_DOMAIN/cordova/YOUR_PACKAGE_ID/callback
 ```
-* `YOUR_PACKAGE_ID` is the app identifier found in `config.xml`. Ex: `com.auth0.cordova.example`.
-* `YOUR_AUTH0_DOMAIN` is your Auth0 tenant domain found in your client settings. Ex: `<tenant>.auth0.com`.
+
+- `YOUR_PACKAGE_ID` is the app identifier found in `config.xml`. Ex: `com.auth0.cordova.example`.
+- `YOUR_AUTH0_DOMAIN` is your Auth0 tenant domain found in your client settings. Ex: `<tenant>.auth0.com`.
 
 <img src="../images/AllowedCallbackURL.png">
 
@@ -44,7 +45,7 @@ Be sure to add the appropriate **Callback URL** to the **Allowed Callback URLs**
 
 ## CORS
 
-**5.** Set up **Allowed Origins (CORS)** 
+**5.** Set up **Allowed Origins (CORS)**
 
 ## Set Environment Variables
 
@@ -52,12 +53,11 @@ Be sure to add the appropriate **Callback URL** to the **Allowed Callback URLs**
 file://*
 ```
 
-
 <img src="../images/AllowedOrigin.png">
 
 ## Installation
 
-* **6.Install Cordova Plugins**
+- **6.Install Cordova Plugins**
 
 ## Set Environment Variables
 
@@ -66,6 +66,7 @@ file://*
 Rename the `env.js.example` file to `env.js` and provide the keys from above.
 
 **env.js**
+
 ```bash
 module.exports = {
   AUTH0_DOMAIN: '{DOMAIN}',
@@ -77,9 +78,10 @@ module.exports = {
 
 > **Note:** If you have downloaded this sample from Auth0's Cordova tutorial, a file called `env.js` will come pre-populated with the **Client ID** and **Domain** for your client, as well as a default **Audience**.
 
-## Set AndroidLaunchMode 
+## Set AndroidLaunchMode
 
 In your `config.xml` file, add this preference:
+
 ```
 <preference name="AndroidLaunchMode" value="singleTask" />
 ```
@@ -138,7 +140,7 @@ The JavaScript project is built from `src/index.js` to `/www/index.js`.
 
 #### Before Shipping to Production
 
-The Content Security Policy in the sample is configured using wildcards for ease of use. For example, the value for `connect-src` is `https://*.auth0.com`. This is fine for development and testing, but be sure to change this to be your Auth0 tenant domain before putting the application into production. 
+The Content Security Policy in the sample is configured using wildcards for ease of use. For example, the value for `connect-src` is `https://*.auth0.com`. This is fine for development and testing, but be sure to change this to be your Auth0 tenant domain before putting the application into production.
 
 ## Issues Reporting
 
@@ -162,31 +164,32 @@ This project is licensed under the MIT license. See the [LICENSE](https://github
 
 Auth0 helps you to:
 
-* Add authentication with [multiple authentication sources](https://docs.auth0.com/identityproviders), either social like
-* Google
-* Facebook
-* Microsoft
-* Linkedin
-* GitHub
-* Twitter
-* Box
-* Salesforce
-* etc.
+- Add authentication with [multiple authentication sources](https://docs.auth0.com/identityproviders), either social like
+- Google
+- Facebook
+- Microsoft
+- Linkedin
+- GitHub
+- Twitter
+- Box
+- Salesforce
+- etc.
 
 **or** enterprise identity systems like:
-* Windows Azure AD
-* Google Apps
-* Active Directory
-* ADFS
-* Any SAML Identity Provider
 
-* Add authentication through more traditional [username/password databases](https://docs.auth0.com/mysql-connection-tutorial)
-* Add support for [linking different user accounts](https://docs.auth0.com/link-accounts) with the same user
-* Support for generating signed [JSON Web Tokens](https://docs.auth0.com/jwt) to call your APIs and create user identity flow securely
-* Analytics of how, when and where users are logging in
-* Pull data from other sources and add it to user profile, through [JavaScript rules](https://docs.auth0.com/rules)
+- Windows Azure AD
+- Google Apps
+- Active Directory
+- ADFS
+- Any SAML Identity Provider
+
+- Add authentication through more traditional [username/password databases](https://docs.auth0.com/mysql-connection-tutorial)
+- Add support for [linking different user accounts](https://docs.auth0.com/link-accounts) with the same user
+- Support for generating signed [JSON Web Tokens](https://docs.auth0.com/jwt) to call your APIs and create user identity flow securely
+- Analytics of how, when and where users are logging in
+- Pull data from other sources and add it to user profile, through [JavaScript rules](https://docs.auth0.com/rules)
 
 ## Create a free Auth0 account
 
-* Go to [Auth0 website](https://auth0.com/signup)
-* Hit the **SIGN UP** button in the upper-right corner
+- Go to [Auth0 website](https://auth0.com/signup)
+- Hit the **SIGN UP** button in the upper-right corner
