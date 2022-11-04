@@ -25,7 +25,7 @@
     "@globules-io/cordova-plugin-ios-xhr": "^1.2.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.2.5",
+    "babel-loader": "^8.3.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "cordova": "^11.0.0",
