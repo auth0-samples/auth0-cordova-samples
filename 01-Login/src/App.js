@@ -120,6 +120,11 @@ App.prototype.login = function(e) {
   client.authorize(options, function(err, authResult) {
     if (err) {
       console.log(err);
+      var isIOS = window.cordova.platformId === 'ios';
+      if (isIOS) {
+        SafariViewController.hide();
+      } 
+      alert(err);
       return (e.target.disabled = false);
     }
     localStorage.setItem('access_token', authResult.accessToken);
