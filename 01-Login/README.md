@@ -47,19 +47,17 @@ Be sure to add the appropriate **Callback URL** to the **Allowed Callback URLs**
 
 **5.** Set up **Allowed Origins (CORS)**
 
-## Set Environment Variables
-
 ```bash
-file://*
+https://localhost
 ```
 
 <img src="../images/AllowedOrigin.png">
 
 ## Installation
 
-- **6.Install Cordova Plugins**
+**6.Install Cordova Plugins**
 
-## Set Environment Variables
+## Set Auth0 Configuration
 
 <img src="../images/EnvSettings.png">
 
@@ -69,14 +67,22 @@ Rename the `env.js.example` file to `env.js` and provide the keys from above.
 
 ```bash
 module.exports = {
-  AUTH0_DOMAIN: '{DOMAIN}',
+  AUTH0_DOMAIN: '{AUTH0_DOMAIN}',
   AUTH0_CLIENT_ID: '{CLIENT_ID}',
-  AUTH0_AUDIENCE: 'https://{DOMAIN}/userinfo',
+  AUTH0_AUDIENCE: 'https://{AUTH0_DOMAIN}/userinfo',
   PACKAGE_ID: 'com.auth0.cordova.example'
 };
 ```
 
-> **Note:** If you have downloaded this sample from Auth0's Cordova tutorial, a file called `env.js` will come pre-populated with the **Client ID** and **Domain** for your client, as well as a default **Audience**.
+If you have a [custom domain](https://auth0.com/docs/customize/custom-domains), use your custom domain instead of the value from the settings page.
+
+Then, replace `{AUTH0_DOMAIN}` with your Auth0 domain in the following files:
+
+- `package.json`: as the value for `ANDROID_HOST` key.
+- `config.xml`: as the value for the `ANDROID_HOST` variable.
+- `index.html`: in the Content Security Policy configuration.
+
+Make sure to set the same domain value you used for the enviroment variables.
 
 ## Set AndroidLaunchMode
 

@@ -28,11 +28,10 @@
     <plugin name="cordova-plugin-customurlscheme" spec="~4.2.0">
         <variable name="URL_SCHEME" value="com.auth0.cordova.example" />
         <variable name="ANDROID_SCHEME" value="com.auth0.cordova.example" />
-        <variable name="ANDROID_HOST" value="{DOMAIN}" />
+        <variable name="ANDROID_HOST" value="{AUTH0_DOMAIN}" />
         <variable name="ANDROID_PATHPREFIX" value="/cordova/com.auth0.cordova.example/callback" />
     </plugin>
     <plugin name="cordova-plugin-safariviewcontroller" spec="~1.6.0" />
-    <plugin name="cordova-plugin-whitelist" spec="~1.3.4" />
     <engine name="android" spec="^8.0.0" />
     <engine name="ios" spec="^5.0.1" />
 </widget>
